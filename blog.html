@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hj. Hanna Gitarisna - Blog</title>
+     <script src="https://unpkg.com/feather-icons"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<!-- Navbar -->
+ <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+<a href="#" class="nav-logo">
+    
+    <img src="HANNA GITARISNA.svg" alt="Logo Hanna Gitarisna" class="logo-img">
+</a>
+
+        <!-- Tombol Hamburger (Hanya muncul di HP) -->
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+            <i data-feather="menu" class="hamburger-icon"></i>
+            <i data-feather="x" class="close-icon" style="display: none;"></i>
+        </button>
+
+        <!-- Menu Navigasi (Akan sembunyi di HP sebelum diklik) -->
+        <div class="nav-menu" id="nav-menu-container">
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Blog</a>
+            <a href="#" class="nav-item">Books</a>
+            <a href="#" class="nav-item">Contact</a>
+        </div>
+    </div>
+</nav>
+
+ <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div id="hero" style="margin-bottom: 5rem; margin-top: 5rem;">
+        <!-- Bagian Gambar di Kiri -->
+        <div class="hero-image-container">
+            <!-- Menampilkan ilustrasi pria tersenyum melambai -->
+            <img src="path/to/your/avatar-image.png" alt="Gambar disini" class="hero-avatar">
+        </div>
+
+        <!-- Bagian Teks dan Tombol di Kanan -->
+        <div class="hero-content-container">
+            <p class="hero-description">
+              Selamat datang di blog pribadi <span class="highlight">Hanna Gitarisna</span>—ruang berbagi cerita, inspirasi, dan dedikasi seputar dunia <span class="highlight">pendidikan</span> internasional <br> <span class="highlight">Indonesia–Türkiye. </span>
+            </p>
+            <a href="" class="hero-cta-button">MASUK KE BERITA</a>
+        </div>
+    </div>
+    <!--  -->
+
+<!-- About Start -->
+<section id="about" >
+      <div id="about">
+        <!-- Bagian Gambar di Kiri -->
+        
+
+        <!-- Bagian Teks dan Tombol di Kanan -->
+        <div class="about-content-container">
+            <h1>Tentang Saya</h1>
+            <p class="about-description">
+               Hj. Hanna Gitarisna adalah seorang konsultan pendidikan profesional yang berdedikasi dalam menjembatani impian generasi muda Indonesia untuk melanjutkan studi ke Turki. Dengan pengalaman di bidang keagenan pendidikan internasional, beliau siap membantu proses persiapan, pendaftaran, hingga adaptasi kuliah di kampus-kampus terbaik Turki secara aman dan terpercaya.
+            </p>
+            <a href="" class="about-cta-button">HUBUNGI SAYA</a>
+        </div>
+
+        <div class="about-image-container">
+            <!-- Menampilkan ilustrasi pria tersenyum melambai -->
+            <img src="path/to/your/avatar-image.png" alt="Gambar Disini" class="about-avatar">
+        </div>
+    </div>
+</section>
+    <!-- About End -->
+
+
+    <!-- Footer -->
+     <footer>
+<div class="footer-container">
+        <div class="footer-content">
+<h2>Contact</h2>
+<a href="">E-mail  -- gitturkiyeagency@gmail.com</a> <br>
+<a href="">Whatsapp  -- +62-821-5675-1653</a> 
+
+
+        </div>
+        <div class="footer-content">
+<h2>Social Media</h2>
+
+<div class="social">
+    <a href=""> <i class="bi bi-instagram"></i> </a>
+    <a href=""> <i class="bi bi-whatsapp fs-2"></i> </a>
+    
+</div>
+        </div>
+        </div>
+
+
+     </footer>
+</body>
+<script>
+    // Pastikan kode feather icons tetap berjalan
+    feather.replace();
+
+    // Logika Hamburger Menu
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu-container');
+    
+    // Ambil elemen ikon di dalam tombol
+    const burgerIcon = menuBtn.querySelector('.hamburger-icon');
+    const closeIcon = menuBtn.querySelector('.close-icon');
+
+    menuBtn.addEventListener('click', () => {
+        // Toggle class 'active' untuk memunculkan/menyembunyikan menu
+        navMenu.classList.toggle('active');
+
+        // Ganti ikon menu (hamburger) ke ikon close (X) secara bergantian
+        if (navMenu.classList.contains('active')) {
+            burgerIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        } else {
+            burgerIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        }
+    });
+</script>
+<script>
+  feather.replace();
+</script>
+</html>
